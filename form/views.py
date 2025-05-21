@@ -12,5 +12,6 @@ def add_product_view(request):
     data=request.POST
     name=data['name']
     price=data['price']
-    Product.objects.create(name=name,price=price)
+    describtion=data['describtion']
+    Product.objects.create(name=name,price=price,describtion=describtion)
     return HttpResponse(f'Product succesfully added to database')

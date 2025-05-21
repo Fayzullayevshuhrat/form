@@ -6,19 +6,25 @@
 </head>
 <body>
 <form action="{%url 'add-product'%}" method="post">
-{%csrf_token%}
-<div>
-    <label>name</label>
-</div>
-<input name="name" >
-<div>
-    <label>price</label>
-</div>
-<input name="price">
+    {%csrf_token%}
+    <div>
+        <label>name</label>
+    </div>
+    <input name="name">
+    <div>
+        <label>price</label>
+    </div>
+    <input name="price">
 
-<button type="submit">Yuborish</button>
-    </form>
 
+    <div>
+        <label>describtion</label>
+    </div>
+    <input name="describtion">
+
+
+    <button type="submit">Yuborish</button>
+</form>
 
 
 </body>
